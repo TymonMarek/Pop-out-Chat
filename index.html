@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+  <script src="https://kit.fontawesome.com/7a683145a3.js" crossorigin="anonymous"></script>
+
+  <title>Document</title>
+</head>
+
+<body>
+  <template id="recipientMessage">
+    <div class="message recipient">
+      <div class="message-content recipient">
+        <p id="messageText" class="message-text">Message</p>
+      </div>
+      <div id="messageTime" class="message-time">00:00</div>
+    </div>
+  </template>
+
+  <template id="senderMessage">
+    <div class="message sender">
+      <div class="message-content sender">
+        <p id="messageText" class="message-text">Message</p>
+      </div>
+      <div id="messageTime" class="message-time">00:00</div>
+    </div>
+  </template>
+
+  <template id="infoMessage">
+    <span id="infoText" class="info"></span>
+  </template>
+
+  <main>
+    <div class="chat-window hidden" id="chatWindow">
+      <header class="chat-header">
+        <h2 class="chat-title" id="chatTitle">Chat</h2>
+        <button class="chat-close" id="chatClose"><i class="fas fa-times"></i></button>
+      </header>
+      <div class="chat" id="chatMessages">
+      </div>
+      <form class="chat-form" id="chatForm">
+        <input autocomplete="off" type="text" class="chat-input" id="chatInput" placeholder="Type a message...">
+        <button class="chat-send" id="chatSend"><i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+    <button class="chat-open" id="chatOpen"><i class="fa fa-comment"></i></button>
+  </main>
+</body>
+
+</html>
